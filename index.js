@@ -11,12 +11,8 @@ app.get('/convert/csv/to/json', function(request, response) {
     var converter = new Converter({ constructResult: true }); //for big csv data 
     //record_parsed will be emitted each csv row being processed 
     converter.on("end_parsed", function(err, jsonObj) {
-        if (err) {
-            response.send("Error occured");
-        } else {
             response.send(jsonObj);
-        }
-
+        
     });
     require("request").get(q).pipe(converter);
 });
