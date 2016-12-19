@@ -4,7 +4,7 @@
   "description": "Convert data from CSV to JSON",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "4.13.3",
