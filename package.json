@@ -1,0 +1,29 @@
+{
+  "name": "csvtojson",
+  "version": "1.0.0",
+  "description": "Convert data from CSV to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "request": "*",
+    "csvtojson":"*"
+      },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasad4156/instaReM.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasad4156/instaReM/issues"
+  },
+  "homepage": "https://github.com/prasad4156/instaReM#readme"
+}
