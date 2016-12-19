@@ -10,7 +10,7 @@ app.get('/convert/csv/to/json', function(request, response) {
 
     var converter = new Converter({ constructResult: true }); //for big csv data 
     //record_parsed will be emitted each csv row being processed 
-    converter.on("end_parsed", function(err, jsonObj) {
+    converter.on("end_parsed", function(jsonObj) {
             response.send(jsonObj);
         
     });
