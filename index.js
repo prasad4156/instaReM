@@ -17,6 +17,10 @@ app.get('/convert/csv/to/json', function(request, response) {
     require("request").get(q).pipe(converter);
 });
 
-app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
-});
+if (require.main === module) {
+    app.listen(app.get('port'), function() {
+        console.log('Node app is running on port', app.get('port'));
+    });
+}
+
+module.exports = app;
